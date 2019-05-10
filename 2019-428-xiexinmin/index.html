@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+		//1
+			function v() {
+				var num=0;
+				for (var i=0;i<arguments.length;i++) {
+					num+=arguments[i];
+				}
+				return num;							
+			}
+			alert(v.call(null, 2, 4)); 
+			alert(v.apply(null, [2, 4]));
+			
+		//2
+			var a=[1,4,2,6,8,0];
+			alert(Math.max.apply(Math,a))
+		</script>
+	</body>
+</html>
